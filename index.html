@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <!-- css reset -->
+  <link rel="stylesheet" href="css/reset-css.css">
+
+  <!-- index.css -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- font awesome => icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-logo">
+        <a href="https://revou.co/" target="_blank">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="RevoU" width="50">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="all-page/profile.html">Our Profile</a></li>
+          <li><a href="Achivement.html">Achievement</a></li>
+          <li><a href="all-page/message.html">Message Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="header-judul">
+        <h1>Halo Bela <span id="username"></span>, Welcome To My Website</h1>
+        <p>Ini website pertama RevoU</p>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <script src ="Achievement.js"></script>
+  <img src="img/bekasi.jpg", class="autoslide">
+  <img src="img/mar.jpg", class="autoslide">
+  <img src="img/bela.jpg", class="autoslide">
+
+
+
+  <!-- headquarter -->
+  <main class="headquarter">
+    <div class="container">
+      <div class="headquarter-judul">
+        <h1>Our City </h1>
+      </div>
+      <div class="headquarter-kota">
+        <div class="bulat">
+          <img src="img/bekasi.jpg" alt="kota 1" width="100">
+          <p>Bekasi</p>
+        </div>
+        <div class="bulat">
+          <img src="img/padang.jpg" alt="kota 1" width="100">
+          <p>Padang</p>
+        </div>
+        <div class="bulat">
+          <img src="img/Aceh.jpg" alt="kota 1" width="100">
+          <p>Aceh</p>
+      </div>
+    </div>
+  </main>
+  <!-- headquarter -->
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container"> 
+      <div class="footer-program">
+        <p>Software Engineering </p>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Mariya bela </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <script>
+    let userName = prompt("Masukkan nama Anda dibawah!");
+    document.getElementById("username").innerText = userName;
+  </script>
+
+</body>
+</html>

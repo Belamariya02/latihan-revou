@@ -1,0 +1,79 @@
+/* navbar dan footer sama dengan index.css */
+
+
+/* main */
+main {
+  padding: 80px 0px 20px;
+}
+.main-judul {
+  margin: 10px 0 30px;
+  line-height: 1.8em;
+}
+.main-pesan {
+  display: flex;
+}
+.main-form {
+  width: 50%;
+}
+.main-form table td {
+  padding: 10px;
+}
+.main-form table input[name="submit"] {
+  width: 100%;
+  background-color: #fede3e;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+.main-form table input[name="submit"]:hover {
+  background-color: #f3d22b;
+  cursor: pointer;
+}
+/* .main-data {
+  margin: 0px auto;
+} */
+.main-data table td {
+  padding: 12px;
+}
+.main-data .td-waktu {
+  border-bottom: 1px solid black;
+}
+
+
+/* footer */
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+/* responsive mobile */
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 20px 0px 20px;
+    font-size: 12px;
+  }
+  .main-judul h1 {
+    font-size: 18px;
+  }
+  .main-form {
+    width: 100%;
+  }
+  .main-form table {
+    width: 100%;
+  }
+  .main-pesan {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-data {
+    margin: 0px auto;
+  }
+
+  footer {
+    position: relative;
+  }
+}

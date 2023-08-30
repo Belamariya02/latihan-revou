@@ -1,0 +1,70 @@
+/* navbar dan footer sama dengan index.css */
+
+
+/* main */
+main {
+  padding: 80px 0px 20px;
+}
+.main-judul {
+  margin: 10px 0px 30px;
+  line-height: 1.8em;
+}
+.main-judul h1 {
+  text-align: left;
+}
+.main-isi {
+  display: flex;
+  flex-direction: column;
+}
+.main-foto {
+  text-align: center;
+}
+.main-foto img {
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.main-foto span {
+  font-size: 14px;
+}
+.main-about {
+  padding: 30px 150px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.main-about p {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+
+/* footer */
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+/* responsive mobile */
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 20px 0px 20px;
+    font-size: 12px;
+  }
+  .main-judul h1 {
+    font-size: 18px;
+  }
+  .main-foto span {
+    font-size: 11px;
+  }
+  .main-about {
+    padding: 20px 5%;
+  }
+
+  footer {
+    position: relative;
+  }
+}
