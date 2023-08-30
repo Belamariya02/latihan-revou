@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <!-- css reset -->
+  <link rel="stylesheet" href="../css/reset-css.css">
+
+  <!-- css index & message sendiri -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/message.css">
+
+  <!-- font awesome => icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-logo">
+        <a href="https://revou.co/" target="_blank">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="RevoU" width="50">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+          <li><a href="Achievement.html">Achievement </a></li>
+          <li><a href="message.html">Message Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <main>
+    <div class="container">
+      <div class="main-judul">
+        <h1>Isi data diri dan pesan Anda!</h1>
+      </div>
+      <div class="main-pesan">
+        <div class="main-form">
+          <form name="message-form" onsubmit="kirim(); return false">
+            <table>
+              <tbody>
+                <tr>
+                  <td><label for="nama">Nama</label></td>
+                  <td>:
+                    <input type="text" name="nama" id="nama" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="ttl">Tanggal Lahir</label></td>
+                  <td>:
+                    <input type="date" name="ttl" id="ttl" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Jenis Kelamin</label></td>
+                  <td>:
+                    <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required><label for="laki-laki">Laki-laki</label>
+                    <input type="radio" name="gender" id="perempuan" value="Perempuan" required><label for="perempuan">Perempuan</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="position: absolute;"><label for="pesan">Pesan</label></td>
+                  <td>
+                    <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input type="submit" name="submit" value="Kirim">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <div class="main-data">
+          <table>
+            <tbody>
+              <tr class="td-waktu">
+                <td><label for="waktu">Waktu</label></td>
+                <td>
+                  <span id="waktu"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:
+                  <span id="nama2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="ttl">Tanggal Lahir</label></td>
+                <td>:
+                  <span id="ttl2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:
+                  <span id="gender2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="pesan">Pesan</label></td>
+                <td>:
+                  <span id="pesan2"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="container"> 
+      <div class="footer-program">
+        <p>Software Engineering </p>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Mariya bela </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+
+  <!-- file message javascript -->
+  <script src="../js/message.js"></script>
+
+</body>
+</html>
